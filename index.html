@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Falling Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- <style>
+        canvas { border: 1px solid black;}
+    </style> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 my-auto">
+                <h1>Falling Game</h1>
+                <div class="text-center">
+                    <button class="btn btn-secondary" aria-label="play button">Play</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <span class="text-left mt-2 ml-4" id="score">Score: 0</span>
+                <span class="float-right mr-4" id="timer" aria-label="timer">Time: 0 seconds</span>
+                <div class="d-flex justify-content-center">
+                    <canvas id="canvas" width="500" height="500" style="border:1px solid black;" aria-label="game box"></canvas>
+                </div>
+                <p class="text-center" aria-label="instructions">Press the left and right arrow keys to dodge left and right.</p>
+            </div>
+            <div class="col-3 my-auto">
+                <h2 class="text-center" id="high" aria-label="high score counter">High Score: 0</h2>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
